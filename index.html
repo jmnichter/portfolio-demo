@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Process Engineer Portfolio | Technical Leader Template</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#10b981', /* Emerald 500 */
+                        secondary: '#064e3b', /* Emerald 900 */
+                        dark: '#111827',
+                        light: '#f9fafb'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <nav class="w-full py-6 px-6 md:px-12 flex justify-between items-center max-w-6xl mx-auto">
+        <div class="text-2xl font-bold text-secondary tracking-tight">
+            J. Nichter
+        </div>
+        <a href="https://jnichter.gumroad.com/l/frxjqx" class="bg-secondary text-white px-5 py-2 rounded-lg font-medium hover:bg-emerald-800 transition shadow-lg">
+            Get This Template
+        </a>
+    </nav>
+
+    <header class="max-w-6xl mx-auto px-6 md:px-12 mt-12 md:mt-20 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+            <img src="https://ui-avatars.com/api/?name=TL&background=10b981&color=fff&size=128" 
+                 alt="Profile Avatar" 
+                 class="w-24 h-24 rounded-full border-4 border-white shadow-lg mb-8">
+
+            <span class="text-primary font-semibold tracking-wide uppercase text-sm">Technical Leader & Process Engineer</span>
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mt-4 leading-tight">
+                Optimizing Systems.<br>
+                <span class="text-primary">Driving Efficiency.</span>
+            </h1>
+            <p class="mt-6 text-lg text-gray-600 leading-relaxed max-w-lg">
+                I bridge the gap between technical data and executive strategy. Specializing in Lean Six Sigma, Python automation, and high-level process architecture.
+            </p>
+            <div class="mt-8 flex gap-4">
+                <a href="#projects" class="border-2 border-gray-900 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 hover:text-white transition">
+                    View Projects
+                </a>
+                <a href="#skills" class="text-gray-600 px-6 py-3 font-medium hover:text-primary transition flex items-center gap-2">
+                    Analyze Competencies <span>↓</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="bg-white p-6 rounded-2xl shadow-xl border border-gray-100 relative" id="skills">
+            <h3 class="text-center text-gray-400 text-sm font-semibold uppercase tracking-wider mb-4">Core Competency Analysis</h3>
+            <canvas id="skillsChart"></canvas>
+            <div class="absolute top-4 right-4 bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded">
+                LIVE DEMO
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-secondary text-white mt-24 py-16">
+        <div class="max-w-6xl mx-auto px-6 md:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+                <div class="text-4xl font-bold text-primary">6+</div>
+                <div class="text-emerald-100 mt-2 text-sm">Years Experience</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-primary">$2M+</div>
+                <div class="text-emerald-100 mt-2 text-sm">Cost Savings</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-primary">15+</div>
+                <div class="text-emerald-100 mt-2 text-sm">Teams Led</div>
+            </div>
+            <div>
+                <div class="text-4xl font-bold text-primary">100%</div>
+                <div class="text-emerald-100 mt-2 text-sm">Project Delivery</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-6 md:px-12 py-24">
+        <h2 class="text-3xl font-bold text-gray-900 mb-12">Selected Technical Initiatives</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="group bg-white rounded-xl shadow-sm hover:shadow-xl border border-gray-200 p-8 transition duration-300">
+                <div class="flex justify-between items-start">
+                    <div class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2 py-1 rounded uppercase">Python + SQL</div>
+                    <span class="text-gray-400">2024</span>
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-gray-900 group-hover:text-primary transition">Supply Chain Automation</h3>
+                <p class="mt-3 text-gray-600 leading-relaxed">
+                    Automated the inventory forecasting model using Python Pandas and SQL, reducing manual reporting time by 15 hours per week and improving accuracy by 12%.
+                </p>
+                <a href="#" class="inline-block mt-6 text-primary font-semibold hover:underline">Read Case Study →</a>
+            </div>
+
+            <div class="group bg-white rounded-xl shadow-sm hover:shadow-xl border border-gray-200 p-8 transition duration-300">
+                <div class="flex justify-between items-start">
+                    <div class="bg-blue-100 text-blue-800 text-xs font-bold px-2 py-1 rounded uppercase">LSS Black Belt</div>
+                    <span class="text-gray-400">2023</span>
+                </div>
+                <h3 class="mt-4 text-xl font-bold text-gray-900 group-hover:text-primary transition">Production Line Optimization</h3>
+                <p class="mt-3 text-gray-600 leading-relaxed">
+                    Led a DMAIC project to reduce waste in the assembly line. Implemented 5S methodology and re-engineered the QA process, resulting in a $450k annual saving.
+                </p>
+                <a href="#" class="inline-block mt-6 text-primary font-semibold hover:underline">Read Case Study →</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-20 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to build your portfolio?</h2>
+        <p class="text-gray-400 max-w-xl mx-auto mb-10">
+            This is a demo of the "Emerald Edition" template. Download the source code today and launch your site in minutes.
+        </p>
+        <a href="https://jnichter.gumroad.com/l/frxjqx" class="bg-primary text-white text-lg px-8 py-4 rounded-full font-bold hover:bg-emerald-400 transition shadow-lg shadow-emerald-900/50">
+            Download Template ($39)
+        </a>
+        <p class="mt-12 text-gray-600 text-sm">
+            © 2025 J. Nichter Templates. All Rights Reserved.
+        </p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Leadership', 'Python/Data', 'Lean Six Sigma', 'Project Mgmt', 'Strategy', 'Cloud Arch'],
+                datasets: [{
+                    label: 'Proficiency Level',
+                    data: [90, 85, 95, 80, 75, 70], // EDIT THESE VALUES
+                    fill: true,
+                    backgroundColor: 'rgba(16, 185, 129, 0.2)', // Emerald with opacity
+                    borderColor: '#10b981', // Emerald solid
+                    pointBackgroundColor: '#064e3b',
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: '#10b981'
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    r: {
+                        angleLines: {
+                            color: '#e5e7eb' // Light gray lines
+                        },
+                        grid: {
+                            color: '#e5e7eb'
+                        },
+                        pointLabels: {
+                            font: {
+                                size: 12,
+                                family: 'Inter',
+                                weight: '600'
+                            },
+                            color: '#374151'
+                        },
+                        suggestedMin: 0,
+                        suggestedMax: 100,
+                        ticks: {
+                            display: false // Hide the numbers on the scale for a cleaner look
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false // Hide the legend box
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
